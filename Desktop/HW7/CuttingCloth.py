@@ -24,28 +24,30 @@ def main():
     print "The cloth can be cut into n products:"
     print "n =", n
     
-    cuts = filename.readlines()
-    for i in range(0,len(cuts)):
-        cuts[i] = cuts[i].strip("\n ")
-        cuts[i] = cuts[i].split( )
+    products = filename.readlines()
+    for i in range(0,len(products)):
+        products[i] = products[i].strip("\n ")
+        products[i] = products[i].split( )
         
-    print cuts
-    print cuts[1]
-    
-    # set up the dimmensions for the list of cuts and each of their profits
-    a = []
-    b = []
-    c = [] 
-    
-    print len(a), len(b), len(c)
-    #print a[0]
-    
+    products.pop() #get rid of empty last element
+    print products
+        
     # Make a 2 dimmensional array for both products and profits
     # Each array is X by Y
-    rememberedCombos = [[0 for x in range(Y)] for x in range(X)]
-    productCombos  = [[0 for x in range(Y)] for x in range(X)]
+    xCoord = [0 for x in range(X)] 
+    yCoord  = [[0 for x in range(X)] for x in range(Y)]
     
-    for i in range(0,n-1):
+    # Store the a list of the profit for each product we are given    
+    profits = []
+    print "prices"
+    for i in range(0,n):
+        c = int(products[i][2])
+        print c
+        profits.append(c)
+    
+
+#def cleanCut()
+    
     
     
     
