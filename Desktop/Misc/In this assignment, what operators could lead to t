@@ -1,0 +1,15 @@
+In this assignment, what operators could lead to the possibility of memory leaking? How do you prevent memory leaks?
+
+malloc(sizeof(obj)) allocates memory on the heap. This operation can lead to the possbility of memory leaking. 
+The queue and the objects pushed onto the heap could have memory leaks in our program. 
+We can prevent memory leaks by using the free(obj) operator. This operator de-allocates the memory on the heap which prevents a memory leak. 
+
+Proper usage would be to use malloc, use the object, and then free the object to ensure proper memory allocation, usage, and prevention of memory leakage. 
+
+
+A mutex/spin lock spins when waiting for a lock, unlike a binary semaphore which sleeps when waiting. In the assignment, I used a mutex/lock to synchronize access to the queue and the output file we were writing to. We used the lock because it prevented threads from writing to a file or doing any queue operations simultaneously leading to race conditions that would cause problems. We creted our goal of mutual exclusion of operators by requesting the lock before using the share resource. We then held the lock while we were using the resources to implement mutual exclusion. Once we were done with our resources we released the lock and signaled for other processes to enable them to use the CPU. 
+
+pthrad_create() 
+int producer = pthread_create(&producer_id, NULL, (void*) producer_pool, input_files);	
+4 parameters --> &producer_id is the address of the pthread object
+The second is the attributes of the thread, the third (void*) producer_pool is the name of the function you want it to run, the fourth input_files is the address to a parameter object. In my program I created an input object for my requester threads that had an address of a file that was going to be read and would make memory for it on the heap, Thereby using malloc() and free() in all of my threads in order to prevent memory leakage

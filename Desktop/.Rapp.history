@@ -1,0 +1,326 @@
+calculate.Info(2)
+calculate.Info = function(x){
+return(gx(x), Gx(x))
+}
+calculate.Info(2)
+calculate.Info = function(x){
+return(gx(x))
+return(Gx(x))
+}
+calculate.Info(2)
+calculate.Info = function(x){
+result <- list(gx(x),Gx(x))
+return(result)
+}
+calculate.Info(2)
+gx = function(x)#
+	{#
+		exp(-6*x)	#
+	}#
+Gx = function(x)#
+	{#
+		integrate(gx, 0, x)#
+	}#
+#
+calculate.info = function(x)#
+	{#
+		result <- list(gx(x), Gx(x))#
+	}
+calculate.info(2)
+x
+clear
+exit
+clear.console
+clear(console)
+gx = function(x)#
+	{#
+		exp(-6*x)	#
+	}#
+Gx = function(x)#
+	{#
+		integrate(gx, 0, x)#
+	}#
+#
+calculate.info = function(x)#
+	{#
+		result <- list(gx(x), Gx(x))#
+		return(result)#
+	}
+calculate.info(2)
+dbinom(3, size=50, prob=0.3) + dbinom(4, size=50, prob=0.3) + dbinom(5, size=50, prob=0.3) + dbinom(6, size=50, prob=0.3) +  dbinom(7, size=50, prob=0.3) + dbinom(8, size=50, prob=0.3) + dbinom(9, size=50, prob=0.3) + dbinom(10, size=50, prob=0.3) + dbinom(11, size=50, prob=0.3) + dbinom(12, size=50, prob=0.3) + dbinom(13, size=50, prob=0.3) + dbinom(14, size=50, prob=0.3) +  dbinom(15, size=50, prob=0.3) + dbinom(16, size=50, prob=0.3) + dbinom(17, size=50, prob=0.3) + dbinom(18, size=50, prob=0.3) + dbinom(19, size=50, prob=0.3) + dbinom(20, size=50, prob=0.3) + dbinom(2, size=50, prob=0.3) + dbinom(1, size=50, prob=0.3) + dbinom(0, size=50, prob=0.3)
+rbinom(n = 10, size = 1, p = .3)
+rbinom(n = 10, size = 2, p = .3)
+rbinom(n = 10, size = 1, p = .9)
+rbinom(n = 10, size = 8, p = .9)
+rbinom(n = 14, size = 1, p = .03)
+pbinom(n = 14, size = 1, p = .03)
+?binom
+?rbinom
+pbinom(n = 14, size = 1, p = .03)
+pbinom(0:10, size = 14, p = .03, lower.tail = TRUE, log.p = FALSE)
+dbinom(0, size=14, prob=0.03)
+dbinom(0, size=14, prob=0.03) + dbinom(1, size=14, prob=0.03) + dbinom(2, size=14, prob=0.03) + dbinom(3, size=14, prob=0.03) + dbinom(4, size=14, prob=0.03) + dbinom(5, size=14, prob=0.03)
+dbinom(0, size=14, prob=0.03)
+dbinom(5, size=14, prob=0.03)
+swag = dbinom(0, size=14, prob=0.03) + dbinom(1, size=14, prob=0.03) + dbinom(2, size=14, prob=0.03) + dbinom(3, size=14, prob=0.03) + dbinom(4, size=14, prob=0.03) + dbinom(5, size=14, prob=0.03)
+1 - swag
+(1-swag)*10
+?rpois
+ppois(10, lambda=30)
+ppois(9, lambda=30)
+poiss.onesample = rpois(1000 , lambda = 2)
+mean(poiss.onesample)
+var(mean(poiss.onesample))
+var(poiss.onesample)
+mean.poissamples = NULL
+for(ctr in 1:500){
+mean.poissamples = c(mean.poissamples, mean(rpoiss(1000, lambda = 2)))
+}
+mean.poissamples = NULL
+mean.poissamples = c(mean.poissamples, mean(rpois(1000, lambda = 2)))
+for(ctr in 1:500){
+mean.poissamples = c(mean.poissamples, mean(rpois(1000, lambda = 2)))
+}
+mean(mean.poissamples)
+var(mean.poissamples)
+par(mfrow = c(2,2))
+par(mfrow = c(2,2), cex = 5, cex.main = 5, cex.lab = 5)
+hist(poiss.onesample, mian = '1 sample ')
+hist(mean.poissamples[1:100], main = 'yo')
+sapply(1:5, function(x) x+1)
+for(ctr in 1:5){
+print(ctr+1)
+}
+samplemeans = sapply(1:500, function(x) mean(rpois(1000, lambda = 2)))
+samplemeans
+par(mfrow = c(1,1))
+hist(samplemeans)
+LL. pois = function(lambda , x){
+LL.pois = function(lambda , x){
+loglike = log(lambda)*sum(x) - length(x)*lambda
+return(-loglike)
+}
+MLE.poiss = optim(2, LL.pois, x = x.poiss, method = 'BFGS')
+x = rnorm(100, mean = 2, sd = 5)
+z.975 = qnorm(.975)
+LB = mean(x) - z.975*5 / sqrt(100)
+UB = mean(x) + z.975*5 / sqrt(100)
+c(LB,UB)
+CIholder = NULL
+alpha = .05
+for(ctr in 1:100){
+norm.sample = rnorm(100, mean = 2, sd = 5)
+x.bar = mean(norm.sample)
+CI = c(x.bar - qnorm(1-alpha/2)*5/sqrt(100), x.bar + qnorm(1-alpha/2)*5/sqrt(100))
+CIholder = rbind(CIholder, CI)
+}
+length(which(2 < CIholder[,1])) + length(which(CIholder[,2]< 2))
+(length(which(2 < CIholder[,1])) + length(which(CIholder[,2]< 2)))/100
+length(which(2 < CIholder[,1] | CIholder[,2] < 2 ))
+CIholder.z.s = CIholder.z.sigma = CIholder.t.s = NULL
+for(ctr in 1:1000){
+x = rnorm(8, mean = 2, sd = 5)
+x.bar = mean(x)
+se.x = sd(x)/sqrt(8)
+CIz.s = c(x.bar - rnorm(.975) * se, x.bar + rnorm(.975) * se.x)
+CIz.sigma = c(x.bar - qnorm(.975) * 5 / sqrt(8) , x.bar + qnorm(.975)*5 / sqrt(8))
+CI.t.s = c(x.bar - qt(.975, df = 7) * se.x, x.bar + qt(1-alpha/2, df = 9) * se.x)
+CIholder.z.sigma = rbind(CIholder.z.sigma, CI.z.sigma)
+CIholder.z.s = rbind(CIholder.z.s, CI.z.s)
+CIholder.t.s = rbind(CIholder.t.s, CI.t.s)
+}
+true.mean = 2
+length(which(true.mean < CIholder.z.sigma[,1] | CIholder.z.sigma[,2] < true.mean)) / i
+length(which(true.mean < CIholder.t.s[,1] | CIholder.t.s[,2] < true.mean)) / ctr
+qchisq(.975, df = 16)
+qchisq(.025, df = 16)
+# For homework we need to use a function in Rmisc
+# Make own confidence interval, compare to Rmisc package
+install.packages("Rmisc", dependencies = TRUE)
+Treedata = read.table(HW3TreeData.txt)
+Treedata = read.table("HW3TreeData.txt")
+Treedata = read.table("HW3TreeData.txt", header = TRUE)
+Treedata
+plot(Treedata)
+plot(Treedata$Ladybugs)
+hist(Treedata$Ladybugs, ylab = "Frequency", xlab = "Pounds of Fruit")
+hist(Treedata$Ladybugs, ylab = "Frequency", xlab = "Pounds of Fruit", main = "Tree Yields for Ladybugs")
+hist(Treedata$Ladybugs, ylab = "Frequency", xlab = "Pounds of Fruit", main = "Tree Yields for Ladybugs")
+hist(Treedata$Pesticide, ylab = "Frequency", xlab = "Pounds of Fruit", main = "Tree Yields for Pesticides")
+hist(Treedata$Pesticide, ylab = "Frequency", xlab = "Pounds of Fruit", main = "Tree Yields for Pesticides", xlim=c(20, 80))
+hist(Treedata$Ladybugs, ylab = "Frequency", xlab = "Pounds of Fruit", main = "Tree Yields for Ladybugs")
+hist(Treedata$Ladybugs, ylab = "Frequency", xlab = "Pounds of Fruit", main = "Tree Yields for Ladybugs", xlim=c(20, 80))
+hist(Treedata$Pesticide, ylab = "Frequency", xlab = "Pounds of Fruit", main = "Tree Yields for Pesticides", xlim=c(20, 80))
+mean(Treedata$Ladybugs)
+mean(Treedata$Pesticide)
+sd(Treedata$Ladybugs)
+sd(treedata$Pesticide)
+sd(Treedata$Pesticide)
+var(Treedata$Ladybugs)
+var(Treedata$Pesticide)
+example <- c( 1470, 1510, 1690, 1740, 1900, 2000, 2030, 2100, 2190, 2200, 2290, 2380, 2390, 2480, 2500, 2580, 2700)
+example
+sum(example)
+mean(example)
+avg = mean(example)
+length(example)
+sum = 0
+example[0]
+example[1]
+for i in range(0,17):
+ro range (0,17):
+for range (0,17):
+for (i in 1:17):
+for (i in 1:17){
+sum = sum + (example[i] - avg)^2
+}
+sum
+sum / 16
+Treetable
+Tabletree
+Treedata
+Treedata$Ladybugs[1]
+length(Treedata$Ladybugs)
+sum = 0
+sum
+for (i in 1:length(Treedata$Ladybugs)){
+sum = sum + (Treedata$Ladybugs[i] - mean(Treedata$Ladybugs) )^2
+}
+sum
+sSquared = (1/14) * sum
+(15-1)*sSquared/5.629
+(15-1)*sSquared/26.119
+sumPesticide = 0
+for (i in 1:length(Treedata$Pesticide)){
+sumPesticide = sumPesticide + (Treedata$Pesticide[i] - mean(Treedata$Pesticide) )^2
+}
+sumPesticide
+sSquaredPest = (1/15 * sumPesticide)
+(14)* sSquaredPest/26.119
+(14)* sSquaredPest/5.629
+qt(.975, 14)
+mean(Treedata$Ladybugs) - qt(.975, 14) * (sd(Treedata$Ladybugs) / sqrt(15) )
+mean(Treedata$Ladybugs) + qt(.975, 14) * (sd(Treedata$Ladybugs) / sqrt(15) )
+mean(Treedata$Pesticide) + qt(.975, 14) * (sd(Treedata$Pesticide) / sqrt(15) )
+mean(Treedata$Pesticide) - qt(.975, 14) * (sd(Treedata$Pesticide) / sqrt(15) )
+rexp(300, 2)
+expSample <- c(rexp(300,2))
+expSample
+means.of.expSamples
+means.of.expSamples = NULL
+means.of.expSamples <- c(1)
+means.of.expSamples
+means.of.expSamples = NULL
+means.of.expSamples
+for i in 1:499{
+for (i in 1:499){
+i
+}
+for (i in 1:499){
+print i
+for (i in 1:499){
+print(i)
+}
+for (i in 1:499){
+means.of.expSamples <- c(mean(rexp(300, 2) ))
+}
+means.of.expSamples
+means.of.expSamples = NULL
+means.of.expSamples <- means.of.expSamples <- c(mean(rexp(300,2)))
+means.of.expSamples
+n <- 1
+for (i in 1:8){n <- n*2}
+n
+n = NULL
+means.of.expSamples <- c()
+for (i in 1:499){
+means.of.expSamples[i] = mean(rexp(300,2))
+}
+means.of.expSamples
+sd(expSample)
+sd(means.of.expSamples)
+par(mfrow =2)
+hist(expSample)
+hist(means.of.expSamples)
+par(mfrow = c(2,1))
+hist(expSample)
+hist(means.of.expSamples)
+hist(means.of.expSamples, xlab = "Average value of 300 random exponential variables")
+hist(means.of.expSamples, xlab = "Random Exponential Values")
+mean(means.of.expSamples)
+mean(expSample)
+par(mfrow = c(2,1))
+hist(expSamples, xlab = "Random Exponential Values")
+hist(expSample, xlab = "Random Exponential Values")
+hist(means.of.expSamples, xlab = "Average value of 300 random exponential variables")
+par(mfrow = c(2,1))
+hist(expSample, xlab = "Random Exponential Values")
+hist(means.of.expSamples, xlab = "Average value of 300 random exponential variables")
+CIcalculator() <- function(interval.type, alpha.value, data.values, n)
+return
+CIcalculator() = function(interval.type, alpha.value, data.values,n)
+{
+HighInteveral = 0
+LowInterval = 0
+if (interval.type = "p")
+clear
+clear.console
+CIcalculator = function(interval.type, alpha.value, data.values, n) {#
+  CIUpper = NULL#
+  CILower = NULL#
+  if (interval.type == "p") {#
+    CIUpper = data.values + (qnorm(1 - alpha.value/2)*sqrt((data.values * (1-data.values))/n))#
+    CILower = data.values - (qnorm(1 - alpha.value/2)*sqrt((data.values * (1-data.values))/n))#
+    return (c(CILower, CIUpper))#
+  } else if (interval.type == "mu") {#
+    m <- mean(data.values)#
+    se = sd(norm.sample)/sqrt(n)#
+    if (n < 30) {#
+      CIUpper = (m + qt(1 - alpha.value/2, df= n-1)*se)#
+      CILower = (m - qt(1 - alpha.value/2, df= n-1)*se)#
+      return (c(CILower, CIUpper))#
+    } else {#
+      CIUpper = (m + qnorm(1-alpha.value/2)*se)#
+      CILower = (m - qnorm(1-alpha.value/2)*se)#
+      return (c(CILower, CIUpper))#
+    }#
+  }#
+}
+CIcalculator("p", .10, .42, 150)
+qnorm(.95)
+qnorm(.975)
+qnorm(.95)
+qnorm(.99)
+CIcalculator2 = function(interval.type, alpha.value, data.values, n)#
+{#
+	UpperLimit = NULL#
+	LowerLimit = NULL#
+	#Proportion#
+	if (interval.type == "p")#
+	{#
+		UpperLimit = data.values + (qnorm( 1 - alpha.value/2 )*sqrt((data.values * (1-			data.values))/n))#
+		LowerLimit = data.values - (qnorm(1 - alpha.value/2)*sqrt((data.values * (1-			data.values))/n))#
+		return (c(LowerLimit, UpperLimit))#
+	}#
+	#mu#
+	else if (interval.type == "mu")#
+	{#
+		mu <- mean(data.values)#
+		standardError = sd(norm.sample) / sqrt(n)#
+		# t-distribution#
+		if (n < 30)#
+		{#
+			UpperLimit = (mu + qt(1 - alpha.value/2, df= n-1) * standardError)#
+			LowerLimit = (mu - qt(1 - alpha.value/2, df= n-1) * standardError)#
+			return (c(LowerLimit, UpperLimit))#
+		}#
+		# z-score#
+		else#
+		{#
+			LowerLimit = (mu - qnorm(1-alpha.value/2) * standardError)#
+			UpperLimit = (mu + qnorm(1-alpha.value/2) * standardError)#
+			return (c(LowerLimit, UpperLimit))#
+		}#
+	}#
+}
+CIcalculator2("p", .10, .42, 150)
