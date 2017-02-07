@@ -1,0 +1,2 @@
+android.app.Application
+com.companyname.mobile3_lab1_android

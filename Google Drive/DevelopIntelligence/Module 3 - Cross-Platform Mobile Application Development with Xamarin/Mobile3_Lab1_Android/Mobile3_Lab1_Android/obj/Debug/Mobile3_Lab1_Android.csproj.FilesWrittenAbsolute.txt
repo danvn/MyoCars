@@ -2,3 +2,16 @@
 /Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/bin/Debug/Xamarin.Android.Support.v13.dll
 /Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/bin/Debug/Xamarin.Android.Support.v4.dll
 /Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/bin/Debug/Mobile3_Lab1_Android.dll.mdb
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/bin/Debug/Mobile3_Lab1_Android.dll
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/bin/Debug/com.companyname.mobile3_lab1_android.apk
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/android/bin/com.companyname.mobile3_lab1_android.apk
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/res/layout/main.xml
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/res/values/strings.xml
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/res/layout/spinner_list.xml
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/res/layout/text_view_for_spinner.xml
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/R.cs.flag
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/bin/Debug/com.companyname.mobile3_lab1_android-Signed.apk
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/uploadflags.txt
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/Mobile3_Lab1_Android.dll
+/Users/dannguyen/Google Drive/DevelopIntelligence/Module 3 - Cross-Platform Mobile Application Development with Xamarin/Mobile3_Lab1_Android/Mobile3_Lab1_Android/obj/Debug/Mobile3_Lab1_Android.dll.mdb
