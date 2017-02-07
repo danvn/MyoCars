@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{9B764D8E-5B5B-434C-91A0-5ABCAA6AA744}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile3_Lab1_Android/SpinnerList.cs">
+    <Files>
+      <File FileName="Mobile3_Lab1_Android/SpinnerList.cs" Line="37" Column="3" />
+      <File FileName="Mobile3_Lab1_Android/MainActivity.cs" Line="15" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Mobile3__Lab1__Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.TestPhone" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
